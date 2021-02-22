@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp">
+
+
+        <TextView
+            android:id="@+id/chatting_send_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_toLeftOf="@+id/chatting_send_msg"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="시간" />
+
+        <TextView
+            android:id="@+id/chatting_send_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:maxWidth="200dp"
+            android:layout_toLeftOf="@+id/chatting_send_photo"
+            android:background="@drawable/chatting_msg_send"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dip"
+            android:paddingBottom="5dp"
+            android:text="msg"
+            android:textColor="@drawable/txt_black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/chatting_send_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/chatting_send_msg"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/photo_default" />
+    </RelativeLayout>
+</LinearLayout>
