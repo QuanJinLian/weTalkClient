@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tab1"
+        android:enabled="true"
+        android:title="채팅"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/sym_action_chat"/>
+    <item
+        android:id="@+id/tab2"
+        android:title="친구"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_sort_by_size"/>
+    <item
+        android:id="@+id/tab3"
+        android:enabled="true"
+        android:title="마이페이지"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_person_24" />
+
+</menu>
